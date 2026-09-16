@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+flask.pid
+flask_out.log
+flask_err.log
+.env
+*.egg-info/
