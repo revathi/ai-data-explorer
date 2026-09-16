@@ -8,8 +8,10 @@ masked), then runs the query and shows you the result.
 ## How it works
 
 1. **NL → SQL**: your question + a role-scoped schema (only tables you're
-   allowed to see) go to a local LLM (`qwen2.5-coder:7b` via Ollama),
-   which generates a SQL query.
+   allowed to see) go to an LLM, which generates a SQL query. Two
+   providers are supported (`LLM_PROVIDER` env var): a local model
+   (`qwen2.5-coder:7b` via Ollama, default, for offline demo rehearsal)
+   or Claude Sonnet 4.5 on AWS Bedrock (for the office deployment).
 2. **Governance guard** (`app/guard.py`): the generated SQL is NEVER
    trusted or run directly. It's parsed, checked to be SELECT-only,
    checked against a table allowlist for the role, and has row-level
@@ -47,6 +49,26 @@ masked), then runs the query and shows you the result.
 
 5. Open http://localhost:5050 in your browser.
 
+### Using AWS Bedrock instead of the local model
+
+For the office deployment (or anywhere Ollama isn't available), set
+`LLM_PROVIDER=bedrock`. AWS credentials are picked up the standard way
+(env vars, `~/.aws/credentials`, or an instance/role profile) — no
+code changes needed:
+
+```
+export LLM_PROVIDER=bedrock
+export AWS_ACCESS_KEY_ID=...
+export AWS_SECRET_ACCESS_KEY=...
+export AWS_REGION=us-east-1   # Bedrock must be enabled for this account/region
+```
+
+Requires model access to Claude Sonnet 4.5 to be granted in the
+Bedrock console first. The default model ID uses the `global.`
+cross-region inference profile; override with `BEDROCK_MODEL_ID` if
+your environment requires a regional profile instead (e.g.
+`us.anthropic.claude-sonnet-4-5-20250929-v1:0`).
+
 ## Demo script (for judges)
 
 1. Log in as **asha (sales_rep, APAC)**, ask: *"What's our total revenue
@@ -80,7 +102,7 @@ data/
   seed_db.py       # creates + seeds the sample enterprise SQLite DB
   enterprise.db     # generated database (Sales/HR domain)
 app/
-  nl2sql.py         # builds role-scoped prompt, calls local Ollama model
+  nl2sql.py         # builds role-scoped prompt, calls Ollama or Bedrock
   governance_rules.py  # per-role table access / row filters / column masks
   guard.py          # validates + secures generated SQL before execution
   app.py            # Flask app tying it together

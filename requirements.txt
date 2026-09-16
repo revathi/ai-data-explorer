@@ -1,3 +1,4 @@
 flask
 sqlglot
 requests
+anthropic[bedrock]
