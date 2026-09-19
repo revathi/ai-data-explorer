@@ -1,144 +1,128 @@
 # Lovable update prompt — GenAI Data Explorer
 
-Update the existing PayLens prototype to reflect this product direction. Inspect the current implementation and retain its useful working features and synthetic payments dataset.
+Refine the existing prototype using this specification. It supersedes earlier instructions about separate DevOps lookup screens, a shared landing/question screen, and identical question suggestions for all audiences. Retain useful working features and synthetic payment data.
 
-## Product purpose
+## Purpose and scope
 
-Payment processing teams rely on database information to answer everyday questions: What happened to this payment? What amount was recorded? Which payments are still pending? Getting these answers often requires SQL expertise and assistance from a colleague with authorised database access. Those handoffs slow routine work, investigations, and responses to business colleagues.
+GenAI Data Explorer is an AI-assisted self-service interface to payment information. DevOps engineers need operational answers quickly, business users need answers in plain English, and product owners need an overall view of payment processing. These experiences share the same data, definitions, and access policies.
 
-The project owner reports that the team's current CloudWatch dashboard is technical and does not provide the transaction-level lookup experience they need. Treat this as a gap in that team's current setup, not a claim that CloudWatch cannot support transaction investigation in general. Existing fraud detection and analytics platforms serve other needs.
+The team's current monitoring setup is technical and does not provide the self-service database access experience they need. Complement existing monitoring and specialist platforms. Keep anomaly detection outside this prototype and human approval in future scope. This application retrieves information; it does not process, retry, cancel, or refund payments.
 
-Position GenAI Data Explorer as **an AI-assisted self-service interface for payment operations**. Its role is to turn an authorised user's plain-English question into a useful answer from payment records. It complements existing monitoring and specialist platforms. Do not pitch it as a replacement for fraud detection, anomaly detection, or enterprise business intelligence.
+## Brand and icon
 
-The core product promise is **one controlled access point to payment information, with the right experience for each team**. Support three equally important use cases: fast database-information retrieval for DevOps engineers, an overall payments dashboard for product owners, and natural-language questions for business users. Build these as connected views over the same data and definitions.
+Use **GenAI Data Explorer** everywhere: Home, navigation, page headers, browser title, and help text. Replace remaining PayLens references.
 
-## Three audiences and experiences
+Create a simple, distinctive product icon combining a data motif with a conversation or discovery motif. Use a reusable vector component that stays recognisable at navigation and favicon sizes. Use the same icon, proportions, and colour treatment on every page. Maintain the existing navy, light surfaces, and orange accents, with readable typography, generous spacing, and accessible contrast. Provide accessible labels for icon-only controls.
 
-1. **DevOps engineers — Find the details quickly.** Provide payment-reference lookup, status/amount/currency, available timestamps, and filtered pending or failed payment lists. Offer direct structured search as well as natural-language input. Keep technical query details accessible in an expandable panel. No arbitrary SQL editor or unrestricted database access is required.
-2. **Product owners — See the overall picture.** Provide a smart Payments overview dashboard with total attempts, settled payment value, success rate, and pending count; date/channel filters; trends; and status/channel breakdowns. Add a short briefing calculated from the selected data, with comparisons against a clearly identified prior period. Clicking a metric should open its supporting records or a prefilled question while preserving the filters. Smart means relevant summaries and connected exploration, not fraud scoring or anomaly detection.
-3. **Business users — Ask in everyday language.** Provide suggested questions, a prominent question box, understandable answers, and contextual follow-ups. Use tables or charts as appropriate and keep technical details collapsed.
+## Home page
 
-Treat these as experience preferences, not automatic permission grants. Every view must respect the user's underlying access scope. Changing a workspace or demo persona must not be represented as real authentication.
+Create a separate Home page explaining the product and the three audiences. Make it the default landing page.
 
-## Value and messaging
+Product name: **GenAI Data Explorer**
+Descriptor: **Self-service payment information for every team.**
+Headline: **Ask it. Know it.**
+Supporting text: **Get operational answers, understand payment performance, and explore your data in plain English—all in one place.**
 
-Use these values to guide design and copy:
+Use a prominent orange primary button labelled exactly **Talk to your Data**. Clicking it opens **Ask your data**, retaining the current user's identity/access context and showing sample questions appropriate to their role. Do not submit a question automatically.
 
-- **Independence:** Payment operations and business colleagues can retrieve permitted information without writing SQL for every request.
-- **Visibility:** Product owners get a clear overall payments picture and can explore the records behind a metric.
-- **Speed:** Reduce the steps and handoffs needed to answer routine questions. Treat faster responses as an intended benefit until measured.
-- **Precision:** Return the correct transaction, amount, currency, status, and reporting period from the data. Make missing or ambiguous information explicit.
-- **Continuity:** Let users refine an investigation without restarting or asking someone to write another query.
-- **Controlled access:** Apply the user's verified permissions in the backend in the enterprise implementation; describe the prototype's actual enforcement accurately.
+Below the hero, explain three benefits using concise cards:
+- **DevOps:** Get answers about payment processing without writing a new database query every time.
+- **Business:** Ask everyday payment questions and refine the answers naturally.
+- **Product owners:** See the payments overview and ask questions about the numbers.
 
-Use this concise product description in About/help content:
-“GenAI Data Explorer brings fast payment lookup for DevOps, a clear payments overview for product owners, and plain-English answers for business teams into one controlled self-service interface.”
+These are explanations, not separate audience-specific screens or permission selectors. Keep the product introduction and primary button visible without scrolling on a typical laptop. Use restrained animation and respect reduced-motion preferences. Keep synthetic-data disclosure visible.
 
-Describe the overall product as a self-service payment data interface, with a smart dashboard as the product-owner experience. Use familiar actions: find a payment, understand the overall picture, and ask a business question. Do not imply that the app processes, retries, cancels, or refunds payments: this is a read-only information interface.
+## Pages and access
 
-## Name and landing page
+| Page | DevOps | Business | Product owner / PM |
+| --- | --- | --- | --- |
+| Home | Yes | Yes | Yes |
+| Ask your data | Yes | Yes | Yes |
+| Business overview | Yes | No in the current prototype | Yes |
+| Query history | Own permitted history | Own permitted history | Own permitted history |
 
-Rename PayLens to **GenAI Data Explorer** throughout navigation, browser titles, help text, and other user-facing references.
+For this prototype, treat PM and product owner as the same audience and label it **Product owner** consistently. Do not add a fourth role merely because both terms are used.
 
-Use this exact headline:
+Navigation should contain Home, Ask your data, Business overview where permitted, and Query history. All links and route titles must agree. Enforce page/data permissions on the backend where one exists; hiding a navigation item is not authorisation. If identity/access is simulated, label the selector **Demo persona** and describe its limits accurately. Do not present a client-controlled role switch as secure sign-in.
 
-**Ask it. Know it.**
+## Ask your data — one shared, personalised screen
 
-Place this short descriptor above the headline:
+Use one route and one shared layout for all three audiences. There is no dedicated DevOps lookup screen, reference-search form, or arbitrary SQL editor. Users ask questions, including questions about individual payments, through the same natural-language input.
 
-**Self-service payment information for every team.**
+Show a heading, a short role-appropriate introduction, sample question chips, and a prominent question box. Personalise the starter questions and follow-up suggestions for the active role; preserve consistent branding, interaction patterns, and answer layout. The UI copy and examples change with the role, not the basic page structure.
 
-Supporting sentence:
+DevOps sample questions:
+- Which POY payments are still pending today?
+- Show rejected MRX payments and their recorded rejection reasons today.
+- Which payments are currently beyond their supplier's processing SLA?
+- What is the status and recorded amount of payment [existing synthetic reference]?
 
-**Find a payment. See the bigger picture. Ask your next question—all in one place.**
+Business sample questions:
+- How many payments were processed today?
+- What was the processed payment value for POY this month?
+- How many payments were rejected this week, grouped by supplier?
+- Compare processed payments for POY and MRX this month.
 
-Place a large, clearly labelled question input directly beneath the headline. Use **What do you need to know?** as the placeholder and **Ask** as the visible submit-button label.
+Product-owner sample questions:
+- Summarise this month's payment processing performance.
+- How does the month-to-date processed count compare with the equivalent period last month?
+- Which suppliers are below their configured demo SLA target?
+- Break down this month's processed and rejected payments by supplier.
 
-Make a shared Home page the first-visit landing page, with the question input and three audience cards visible on a typical laptop. Remember the preferred workspace for subsequent visits without changing permissions. Retain the existing navy, light surfaces, and warm accent colours. Use generous spacing, readable typography, a subtle data-inspired background, and restrained animation that respects reduced-motion preferences. Keep the input and suggestions stationary while users read or type.
+Questions must be supported by the synthetic data. Add necessary synthetic fields and deterministic examples consistently; do not offer a question that can only receive an invented answer. Supplier SLA questions and corresponding data are available only where the configured policy permits them.
 
-Below the input, provide three clickable use-case cards:
+Present answers as a concise finding, reporting period and filters, then a table or useful chart. For an individual payment, display a compact detail card. Put technical query details in a collapsed panel where policy permits, distinguishing executed SQL from illustrative SQL. Use contextual follow-ups such as “Only MRX,” “Show this month instead,” or “Break that down by supplier.” Preserve relevant context and distinguish a new question from a follow-up.
 
-- **DevOps — Find payment details:** Open Payment lookup, with reference search and operational filters.
-- **Product owners — See the payments overview:** Open the smart dashboard, with summaries, comparisons, and drill-downs.
-- **Business — Ask the data:** Open the conversational workspace with useful starter questions.
+When a different demo persona is selected, clear the previous conversation and cached results from view and load the new persona's permitted history and suggestions. Do not leak answers between roles.
 
-Make payment-reference lookup and pending-payment retrieval core demo capabilities. If the current synthetic dataset lacks these, add deterministic references and consistent pending records, then update dependent calculations. Offer other questions only when supported by the dataset.
+## Business overview — product owners and DevOps
 
-Below the cards, show a compact example conversation focused on a single payment: a synthetic reference, an answer card showing status and amount, and a follow-up such as “When was it last updated?” Only offer that follow-up if a real synthetic update timestamp exists. Label the conversation **Example** until the user starts their own. Starting a question should move naturally into the results experience.
+Create a clear overview with a prominent data timestamp, supplier filters, payment summary cards, and a supplier SLA table. Include POY and MRX as business suppliers; keep supplier distinct from payment channel and merchant.
 
-Convey fast self-service access through the interaction design. Show a useful loading state and return results as soon as available. Do not fabricate response times or guarantee instant results.
+Required cards:
+1. **Payments processed today:** From midnight in the displayed reporting timezone up to the data-as-of timestamp.
+2. **Payments processed this month:** From the start of the current reporting month up to that same timestamp.
+3. **Payments rejected:** Count for a clearly labelled period, defaulting to today up to the same timestamp.
 
-## Navigation and scope
+For the initial prototype, interpret “processed until the current timestamp” as today's processed count to the displayed data-as-of timestamp. Make that scope explicit in the UI. Define processed as successfully completed processing in the dataset, excluding pending and rejected records. If an existing status such as settled is used, document its mapping and use it consistently in cards and answers.
 
-- **Home:** Shared question input and three audience entry points.
-- **Payment lookup:** Primary workspace for DevOps, including structured search and operational lists.
-- **Payments overview:** Primary workspace for product owners, with KPI cards, charts, a concise briefing, and drill-downs.
-- **Ask the data:** Primary workspace for business questions and contextual follow-ups, also available to other audiences.
-- **Query history:** Previous questions and results, with technical audit details in expandable sections.
+Show supporting amounts only with currency and a clear definition. Optional charts should support the overview without crowding out the cards and SLA table. Clicking a permitted metric should open Ask your data with a prefilled question and matching filters, without automatically executing it.
 
-Remove the Anomalies page and anomaly detection features. Human approval is future scope; do not add approval queues, reviewer screens, or approval steps. Focus the presentation on successful retrieval and exploration. Retain automated access checks and error handling without making blocked requests a featured demo scenario.
+Required supplier SLA table columns:
+- Business supplier, including POY and MRX.
+- Configured processing-time threshold.
+- Target on-time completion percentage.
+- Completed payments in the selected period.
+- Payments completed within SLA.
+- On-time completion percentage.
+- Pending payments currently overdue.
+- Target met / Below target / No completed payments.
 
-## Suggested questions
+All thresholds and targets are **illustrative demo settings**, configurable per supplier; do not imply they are actual supplier agreements. Label the synthetic SLA policy clearly.
 
-DevOps:
-- Find payment [a selectable synthetic payment reference].
-- What amount and currency were recorded for this payment?
-- Which payments are still pending from yesterday?
-- Show failed payments by channel and reason.
+Calculate processing duration from recorded receipt and completion timestamps. Define on-time completion percentage as successful completions within the supplier threshold divided by all successful completions in the selected completion-time window. Exclude rejected and pending payments from that denominator and show pending breaches separately. Count pending overdue records as of the data timestamp using their receipt time and supplier threshold. Explain this definition in a tooltip; display N/A for a zero denominator. Use UTC elapsed durations and display the reporting timezone consistently. Handle invalid/missing timestamps explicitly.
 
-Product owners (dashboard and optional questions):
-- Show total attempts, settled value, success rate, and pending payments for the selected period.
-- Compare this period with the previous equivalent period.
-- Show the channel breakdown behind this metric.
+## Data, freshness, and correctness
 
-Business:
-- How many payments settled yesterday, and what was their total value?
-- Show settled payments for a specified merchant and date, if those fields are available.
-- Compare payment volumes across channels for a defined period.
+Use synthetic records with supplier, payment reference, amount, currency, status, received timestamp, applicable completion/rejection timestamps, and rejection reason where relevant. Maintain supplier SLA settings separately. Include realistic processed, rejected, and pending examples for POY and MRX. Never include real payment credentials or personal customer data.
 
-Only display supported examples. Do not silently substitute another question or invent an answer.
+Calculate cards, tables, summaries, and conversational answers from the same records and definitions. Do not hardcode unrelated display numbers. Dashboard and equivalent questions must agree for the same access scope, period, and timestamp. Use event timestamps appropriate to each metric and label their meaning.
 
-## Answer and follow-up experience
+Always distinguish the current clock time from **Data as of**. If the dataset is fixed, use a clearly labelled fixed demo reference timestamp and resolve “today,” “this month,” and “yesterday” against it. Do not keep advancing a clock or claim live refresh over stale static data. If synthetic data refreshes, update records, the data timestamp, and all affected calculations together. A reset must reproduce the same starting state.
 
-Present each response in this order:
-1. A concise, plain-English answer.
-2. The reporting period, filters, and applicable access scope.
-3. A useful results table.
-4. A chart when it helps explain a trend or comparison.
-5. Relevant follow-up suggestions.
+Handle unrelated questions with a payment-scope explanation and useful suggestions. Do not generate SQL containing a general AI explanation and present it as a database answer. Keep empty results, errors, unsupported questions, and ambiguity distinct.
 
-For a single payment, show a compact detail card with its reference, status, amount, currency, channel, and available timestamps. Use a table for multiple payments and allow selecting a row to open its details. Show an explicit choice if a reference matches more than one record; never arbitrarily choose a match. Indicate when results are limited. Put SQL under a collapsed **View query details** panel. Distinguish illustrative SQL from queries actually executed.
+## Security and presentation accuracy
 
-Support follow-ups such as “What was its recorded amount?”, “Only show iDEAL payments,” and “Show payments still pending.” Preserve the active transaction reference or list scope, dates, and filters unless explicitly changed. Show the updated scope. Ask for clarification when a request is ambiguous and explain unsupported requests. Distinguish empty results from errors.
+Use a compact role/access indicator and synthetic-data label. Describe actual model calls, SQL execution, and permissions accurately. Synthetic data does not itself mean AI or database execution is simulated. Keep credentials and connection details out of browser code.
 
-## Data correctness and transparency
+Architecture copy, labelled **Proposed enterprise architecture** unless verified as implemented:
+“The database stays within the private network. Users access information through an authorised application, with role-based permissions controlling what they can see.”
 
-Use synthetic payments only. Calculate metrics, summaries, tables, and charts from those records. Keep definitions consistent across Payments overview, Payment lookup, and conversational answers, particularly success rate and settled payment value. A dashboard count and equivalent natural-language question must agree for the same period and access scope. Show currency and avoid summing different currencies without an explicit conversion basis. Explain pending-payment treatment in success-rate denominators; use percentage points for changes between rates, and handle a zero prior-period baseline explicitly.
+Focus the pitch on useful results, fewer handoffs, and self-service access. Do not invent measured speed improvements. Security supports the experience; blocked requests are not a featured recording scenario.
 
-Show a demo reference date and data-through timestamp where available. Resolve relative periods consistently against the dataset's reference date so recording is repeatable.
+## Completion checks
 
-For unrelated questions such as “What is AWS Bedrock?”, explain that the application supports payment-data questions and suggest relevant examples. Do not generate SQL containing a general AI explanation and present it as a retrieved data answer.
+Verify consistent icon/name across pages, Home-to-Ask navigation, distinct starter questions for all three roles, product-owner access to Ask your data, and Business overview access for DevOps and product owners. Verify overview calculations, POY/MRX SLA rows, zero denominators, overdue pending records, reporting-time boundaries, follow-up context, role-change result clearing, unsupported questions, and reset behaviour.
 
-Inspect which functions actually use a model or database and label simulations accurately. Keep a discreet **Synthetic demo data** label. Do not infer that synthetic data means AI or execution is simulated, or imply live execution where it does not exist.
-
-## Access and architecture messaging
-
-Keep a compact role/access indicator. If sign-in is simulated, label the selector **Demo persona**. Verify permission enforcement before making claims about it. Keep credentials and real database connection details out of frontend code.
-
-For an architecture explanation, use:
-“The database stays within the private network. Users access insights through an authorised application, with role-based permissions controlling what they can see.”
-
-Label this **Proposed enterprise architecture** unless that deployment has actually been implemented and verified. Security details should support the results experience without dominating the landing page.
-
-## Demo journey and verification
-
-Optimise three concise moments for a three-minute presentation:
-**DevOps finds a payment → a product owner checks the overall picture → a business user asks and refines a question.**
-
-For an approximately 55-second demonstration section, target 15 seconds for a payment lookup, 15 seconds for the product-owner dashboard and one drill-down, and 25 seconds for a business question and follow-up. Use a consistent date/channel example so the scenes feel connected. Present workspace changes as demo navigation, not as evidence of authenticated role changes. Keep the complete video, including problem, value, safeguards, and closing, within three minutes.
-
-Emphasise fewer handoffs, faster access to information, and more independent operations and business teams as intended benefits. Do not invent measured savings. For a future pilot, measure time to retrieve a correct answer, routine requests resolved without engineering assistance, and correctness of returned transaction details.
-
-Provide a repeatable demo reset. Verify all three audience entry points, reference lookup, dashboard calculations and drill-down filters, suggested questions, follow-up context, consistency between views, relative dates, empty results, unsupported questions, and access-scope behaviour. Keep generation, validation, execution, and presentation separate for future integrations.
-
-After making the changes, summarise what works, what was verified, and what remains simulated or planned.
+Keep data access, generation, policy validation, execution, and presentation separate. After implementation, summarise what changed, what was verified, and what remains simulated or planned. The full pitch video will be no more than three minutes; the app must support a concise results-focused recording.
