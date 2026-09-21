@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#F5F7FB"/>
+<text x="65" y="42" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="49" font-weight="700" fill="#142B45">GenAI Data Explorer</text>
+<text x="65" y="107" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="400" fill="#53667B">Ask it. Know it.  |  Natural-language access to authorised business data</text>
+<rect x="1450" y="52" width="405" height="49" rx="24" fill="#E7EDF5" stroke="none" stroke-width="2"/>
+<text x="1480" y="61" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="700" fill="#396CB0">PROPOSED AWS ARCHITECTURE</text>
+<rect x="350" y="179" width="1515" height="766" rx="26" fill="#FFFFFF" stroke="#D7E0EB" stroke-width="2"/>
+<text x="381" y="194" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#53667B">AWS environment</text>
+<rect x="743" y="446" width="1083" height="357" rx="22" fill="#EDF6F3" stroke="#9FC8BE" stroke-width="2"/>
+<text x="1510" y="462" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="700" fill="#127768">VPC · private subnets</text>
+<rect x="390" y="259" width="270" height="154" rx="20" fill="#EFF3FA" stroke="#CDD9EB" stroke-width="2"/>
+<text x="411" y="281" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#142B45">Identity &amp; access</text>
+<text x="411" y="323" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#53667B">SSO / token authorizer</text>
+<text x="411" y="355" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#53667B">Verified user context</text>
+<polyline points="525,413 525,540" fill="none" stroke="#396CB0" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="525,540 519.345448056554,528.2941876694152 530.654551943446,528.2941876694152" fill="#396CB0"/>
+<rect x="790" y="259" width="241" height="154" rx="20" fill="#FFF7EC" stroke="#E9D8BE" stroke-width="2"/>
+<text x="810" y="280" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" fill="#142B45">Approved metadata</text>
+<text x="810" y="321" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#53667B">Schema + definitions</text>
+<text x="810" y="353" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#53667B">Versioned configuration</text>
+<polyline points="895,413 895,540" fill="none" stroke="#CE571E" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="895,540 889.345448056554,528.2941876694152 900.654551943446,528.2941876694152" fill="#CE571E"/>
+<rect x="1103" y="259" width="327" height="154" rx="20" fill="#F0EBFA" stroke="#D5C8EA" stroke-width="2"/>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 80 80" version="1.1" x="1124" y="274">
+    <ns0:title>Icon-Architecture/64/Arch_Amazon-Bedrock_64</ns0:title>
+    <ns0:g id="Amazon-Bedrock-Icon-Architecture/64/Arch_Amazon-Bedrock_64" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <ns0:g id="Amazon-Bedrock-Icon-Architecture-BG/64/Machine-Learning" fill="#01A88D">
+            <ns0:rect id="Amazon-Bedrock-Rectangle" x="0" y="0" width="80" height="80" />
+        </ns0:g>
+        <ns0:g id="Amazon-Bedrock-Icon-Service/64/Amazon-Bedrock_64" transform="translate(12.000000, 12.000000)" fill="#FFFFFF">
+            <ns0:path d="M52,26.9998918 C50.897,26.9998918 50,26.1028918 50,24.9998918 C50,23.8968918 50.897,22.9998918 52,22.9998918 C53.103,22.9998918 54,23.8968918 54,24.9998918 C54,26.1028918 53.103,26.9998918 52,26.9998918 L52,26.9998918 Z M20.113,53.9078918 L16.865,52.0138918 L23.53,47.8478918 L22.47,46.1518918 L14.913,50.8748918 L9,47.4258918 L9,38.5348918 L14.555,34.8318918 L13.445,33.1678918 L7.959,36.8248918 L2,33.4198918 L2,28.5798918 L8.496,24.8678918 L7.504,23.1318918 L2,26.2768918 L2,22.5798918 L8,19.1518918 L14,22.5798918 L14,26.4338918 L9.485,29.1428918 L10.515,30.8568918 L15,28.1658918 L19.485,30.8568918 L20.515,29.1428918 L16,26.4338918 L16,22.5348918 L21.555,18.8318918 C21.833,18.6458918 22,18.3338918 22,17.9998918 L22,10.9998918 L20,10.9998918 L20,17.4648918 L14.959,20.8248918 L9,17.4198918 L9,8.57389181 L14,5.65789181 L14,13.9998918 L16,13.9998918 L16,4.49089181 L20.113,2.09189181 L28,4.72089181 L28,33.4338918 L13.485,42.1428918 L14.515,43.8568918 L28,35.7658918 L28,51.2788918 L20.113,53.9078918 Z M50,37.9998918 C50,39.1028918 49.103,39.9998918 48,39.9998918 C46.897,39.9998918 46,39.1028918 46,37.9998918 C46,36.8968918 46.897,35.9998918 48,35.9998918 C49.103,35.9998918 50,36.8968918 50,37.9998918 L50,37.9998918 Z M40,47.9998918 C40,49.1028918 39.103,49.9998918 38,49.9998918 C36.897,49.9998918 36,49.1028918 36,47.9998918 C36,46.8968918 36.897,45.9998918 38,45.9998918 C39.103,45.9998918 40,46.8968918 40,47.9998918 L40,47.9998918 Z M39,7.99989181 C39,6.89689181 39.897,5.99989181 41,5.99989181 C42.103,5.99989181 43,6.89689181 43,7.99989181 C43,9.10289181 42.103,9.99989181 41,9.99989181 C39.897,9.99989181 39,9.10289181 39,7.99989181 L39,7.99989181 Z M52,20.9998918 C50.141,20.9998918 48.589,22.2798918 48.142,23.9998918 L30,23.9998918 L30,18.9998918 L41,18.9998918 C41.553,18.9998918 42,18.5518918 42,17.9998918 L42,11.8578918 C43.72,11.4108918 45,9.85789181 45,7.99989181 C45,5.79389181 43.206,3.99989181 41,3.99989181 C38.794,3.99989181 37,5.79389181 37,7.99989181 C37,9.85789181 38.28,11.4108918 40,11.8578918 L40,16.9998918 L30,16.9998918 L30,3.99989181 C30,3.56889181 29.725,3.18789181 29.316,3.05089181 L20.316,0.050891811 C20.042,-0.039108189 19.744,-0.00910818904 19.496,0.135891811 L7.496,7.13589181 C7.188,7.31489181 7,7.64489181 7,7.99989181 L7,17.4198918 L0.504,21.1318918 C0.192,21.3098918 0,21.6408918 0,21.9998918 L0,33.9998918 C0,34.3588918 0.192,34.6898918 0.504,34.8678918 L7,38.5798918 L7,47.9998918 C7,48.3548918 7.188,48.6848918 7.496,48.8638918 L19.496,55.8638918 C19.65,55.9538918 19.825,55.9998918 20,55.9998918 C20.106,55.9998918 20.213,55.9828918 20.316,55.9488918 L29.316,52.9488918 C29.725,52.8118918 30,52.4308918 30,51.9998918 L30,39.9998918 L37,39.9998918 L37,44.1418918 C35.28,44.5888918 34,46.1418918 34,47.9998918 C34,50.2058918 35.794,51.9998918 38,51.9998918 C40.206,51.9998918 42,50.2058918 42,47.9998918 C42,46.1418918 40.72,44.5888918 39,44.1418918 L39,38.9998918 C39,38.4478918 38.553,37.9998918 38,37.9998918 L30,37.9998918 L30,32.9998918 L42.5,32.9998918 L44.638,35.8498918 C44.239,36.4718918 44,37.2068918 44,37.9998918 C44,40.2058918 45.794,41.9998918 48,41.9998918 C50.206,41.9998918 52,40.2058918 52,37.9998918 C52,35.7938918 50.206,33.9998918 48,33.9998918 C47.316,33.9998918 46.682,34.1878918 46.119,34.4918918 L43.8,31.3998918 C43.611,31.1478918 43.314,30.9998918 43,30.9998918 L30,30.9998918 L30,25.9998918 L48.142,25.9998918 C48.589,27.7198918 50.141,28.9998918 52,28.9998918 C54.206,28.9998918 56,27.2058918 56,24.9998918 C56,22.7938918 54.206,20.9998918 52,20.9998918 L52,20.9998918 Z" id="Amazon-Bedrock-Fill-1" />
+        </ns0:g>
+    </ns0:g>
+</ns0:svg>
+<text x="1203" y="291" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#142B45">Amazon Bedrock</text>
+<text x="1128" y="347" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#53667B">Proposes SQL from question</text>
+<text x="1128" y="377" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#53667B">and permitted schema</text>
+<polyline points="1205,413 1205,540" fill="none" stroke="#79559A" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1205,540 1199.345448056554,528.2941876694152 1210.654551943446,528.2941876694152" fill="#79559A"/>
+<polygon points="1205,413 1210.654551943446,424.7058123305848 1199.345448056554,424.7058123305848" fill="#79559A"/>
+<text x="1300" y="448" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#53667B">Model access via</text>
+<text x="1300" y="473" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#53667B">VPC endpoint</text>
+<rect x="65" y="540" width="255" height="178" rx="20" fill="#142B45" stroke="none" stroke-width="2"/>
+<text x="86" y="562" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF">Web application</text>
+<text x="86" y="607" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#E7EDF5">Ask in plain English</text>
+<text x="86" y="644" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#E7EDF5">Explore results</text>
+<text x="80" y="463" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#53667B">DevOps · Business</text>
+<text x="80" y="493" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#53667B">Product owners</text>
+<rect x="390" y="540" width="270" height="178" rx="20" fill="#F5F0FA" stroke="#DACDE6" stroke-width="2"/>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 80 80" fill="none" x="407" y="555">
+<ns0:g id="Amazon-API-Gateway-Icon-Architecture/64/Arch_Amazon-API-Gateway_64">
+<ns0:g id="Amazon-API-Gateway-Icon-Architecture-BG/64/Networking-Content-Delivery">
+<ns0:rect id="Amazon-API-Gateway-Rectangle" width="80" height="80" fill="#8C4FFF" />
+</ns0:g>
+<ns0:g id="Amazon-API-Gateway-Icon-Service/64/Amazon-API-Gateway_64">
+<ns0:path id="Amazon-API-Gateway-Amazon-API-Gateway_Icon_64_Squid" fill-rule="evenodd" clip-rule="evenodd" d="M34.065 55.6324H37V53.6153H34.065V55.6324ZM39 55.6324H42V53.6153H39V55.6324ZM27 14.6295L14 21.0821V61.1934L27 65.5896V14.6295ZM29 27.3934V53.6153H32V55.6324H29V66.9915C29 67.3162 28.845 67.6208 28.584 67.8104C28.412 67.9355 28.207 68 28 68C27.894 68 27.786 67.9829 27.682 67.9476L12.682 62.8756C12.274 62.7375 12 62.3522 12 61.9196V20.4537C12 20.0705 12.217 19.7185 12.559 19.5491L27.559 12.1041C27.868 11.9498 28.235 11.9679 28.528 12.1525C28.821 12.3361 29 12.6598 29 13.0087V25.3764H32V27.3934H29ZM44 55.6324H47V53.6153H44V55.6324ZM44.065 27.3934H47V25.3764H44.065V27.3934ZM39.065 27.3934H42V25.3764H39.065V27.3934ZM34.065 27.3934H37V25.3764H34.065V27.3934ZM66 21.0821L53 14.6295V65.5896L66 61.1934V21.0821ZM68 61.9196C68 62.3522 67.726 62.7375 67.318 62.8756L52.318 67.9476C52.214 67.9829 52.106 68 52 68C51.793 68 51.588 67.9355 51.416 67.8104C51.155 67.6208 51 67.3162 51 66.9915V55.6324H49.065V53.6153H51V27.3934H49.065V25.3764H51V13.0087C51 12.6598 51.179 12.3361 51.472 12.1525C51.765 11.9679 52.131 11.9498 52.441 12.1041L67.441 19.5491C67.783 19.7185 68 20.0705 68 20.4537V61.9196ZM42.934 33.8067L41.066 33.0826L36.066 46.1935L37.934 46.9176L42.934 33.8067ZM49.707 40.2089C50.098 39.8145 50.098 39.1761 49.707 38.7828L45.707 34.7487L44.293 36.1747L47.586 39.4958L44.293 42.8169L45.707 44.243L49.707 40.2089ZM34.293 44.243L30.293 40.2089C29.902 39.8145 29.902 39.1761 30.293 38.7828L34.293 34.7487L35.707 36.1747L32.414 39.4958L35.707 42.8169L34.293 44.243Z" fill="white" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>
+<text x="485" y="575" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#142B45">API Gateway</text>
+<text x="411" y="638" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#53667B">Authorised requests</text>
+<text x="411" y="677" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#53667B">HTTPS API</text>
+<rect x="790" y="540" width="470" height="178" rx="20" fill="#FFF1E5" stroke="#E7BC97" stroke-width="2"/>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 80 80" version="1.1" x="810" y="551">
+    <ns0:title>Icon-Architecture/64/Arch_AWS-Lambda_64</ns0:title>
+    <ns0:g id="AWS-Lambda-Icon-Architecture/64/Arch_AWS-Lambda_64" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <ns0:g id="AWS-Lambda-Icon-Architecture-BG/64/Compute" fill="#ED7100">
+            <ns0:rect id="AWS-Lambda-Rectangle" x="0" y="0" width="80" height="80" />
+        </ns0:g>
+        <ns0:path d="M28.0075352,66 L15.5907274,66 L29.3235885,37.296 L35.5460249,50.106 L28.0075352,66 Z M30.2196674,34.553 C30.0512768,34.208 29.7004629,33.989 29.3175745,33.989 L29.3145676,33.989 C28.9286723,33.99 28.5778583,34.211 28.4124746,34.558 L13.097944,66.569 C12.9495999,66.879 12.9706487,67.243 13.1550766,67.534 C13.3374998,67.824 13.6582439,68 14.0020416,68 L28.6420072,68 C29.0299071,68 29.3817234,67.777 29.5481094,67.428 L37.563706,50.528 C37.693006,50.254 37.6920037,49.937 37.5586944,49.665 L30.2196674,34.553 Z M64.9953491,66 L52.6587274,66 L32.866809,24.57 C32.7014253,24.222 32.3486067,24 31.9617091,24 L23.8899822,24 L23.8990031,14 L39.7197081,14 L59.4204149,55.429 C59.5857986,55.777 59.9386172,56 60.3255148,56 L64.9953491,56 L64.9953491,66 Z M65.9976745,54 L60.9599868,54 L41.25928,12.571 C41.0938963,12.223 40.7410777,12 40.3531778,12 L22.89768,12 C22.3453987,12 21.8963569,12.447 21.8953545,12.999 L21.884329,24.999 C21.884329,25.265 21.9885708,25.519 22.1780103,25.707 C22.3654452,25.895 22.6200358,26 22.8866544,26 L31.3292417,26 L51.1221625,67.43 C51.2885485,67.778 51.6393624,68 52.02626,68 L65.9976745,68 C66.5519605,68 67,67.552 67,67 L67,55 C67,54.448 66.5519605,54 65.9976745,54 L65.9976745,54 Z" id="AWS-Lambda-AWS-Lambda_Icon_64_Squid" fill="#FFFFFF" />
+    </ns0:g>
+</ns0:svg>
+<text x="891" y="560" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700" fill="#142B45">AWS Lambda</text>
+<text x="891" y="597" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#53667B">Scope schema + permissions</text>
+<text x="813" y="640" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#53667B">Validate SQL → execute → format results</text>
+<text x="813" y="678" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#CE571E">Row limits · query deadline · read-only</text>
+<rect x="1450" y="540" width="330" height="178" rx="20" fill="#E4F2ED" stroke="#98C8B8" stroke-width="2"/>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 80 80" version="1.1" x="1467" y="552">
+    <ns0:title>Icon-Architecture/64/Arch_Amazon-RDS_64</ns0:title>
+    <ns0:g id="Amazon-RDS-Icon-Architecture/64/Arch_Amazon-RDS_64" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <ns0:g id="Amazon-RDS-Icon-Architecture-BG/64/Database" fill="#C925D1">
+            <ns0:rect id="Amazon-RDS-Rectangle" x="0" y="0" width="80" height="80" />
+        </ns0:g>
+        <ns0:path d="M15.414,14 L24.707,23.293 L23.293,24.707 L14,15.414 L14,23 L12,23 L12,13 C12,12.448 12.447,12 13,12 L23,12 L23,14 L15.414,14 Z M68,13 L68,23 L66,23 L66,15.414 L56.707,24.707 L55.293,23.293 L64.586,14 L57,14 L57,12 L67,12 C67.553,12 68,12.448 68,13 L68,13 Z M66,57 L68,57 L68,67 C68,67.552 67.553,68 67,68 L57,68 L57,66 L64.586,66 L55.293,56.707 L56.707,55.293 L66,64.586 L66,57 Z M65.5,39.213 C65.5,35.894 61.668,32.615 55.25,30.442 L55.891,28.548 C63.268,31.045 67.5,34.932 67.5,39.213 C67.5,43.495 63.268,47.383 55.89,49.879 L55.249,47.984 C61.668,45.812 65.5,42.534 65.5,39.213 L65.5,39.213 Z M14.556,39.213 C14.556,42.393 18.143,45.585 24.152,47.753 L23.473,49.634 C16.535,47.131 12.556,43.333 12.556,39.213 C12.556,35.094 16.535,31.296 23.473,28.792 L24.152,30.673 C18.143,32.842 14.556,36.034 14.556,39.213 L14.556,39.213 Z M24.707,56.707 L15.414,66 L23,66 L23,68 L13,68 C12.447,68 12,67.552 12,67 L12,57 L14,57 L14,64.586 L23.293,55.293 L24.707,56.707 Z M40,31.286 C32.854,31.286 29,29.44 29,28.686 C29,27.931 32.854,26.086 40,26.086 C47.145,26.086 51,27.931 51,28.686 C51,29.44 47.145,31.286 40,31.286 L40,31.286 Z M40.029,39.031 C33.187,39.031 29,37.162 29,36.145 L29,31.284 C31.463,32.643 35.832,33.286 40,33.286 C44.168,33.286 48.537,32.643 51,31.284 L51,36.145 C51,37.163 46.835,39.031 40.029,39.031 L40.029,39.031 Z M40.029,46.667 C33.187,46.667 29,44.798 29,43.781 L29,38.862 C31.431,40.291 35.742,41.031 40.029,41.031 C44.292,41.031 48.578,40.292 51,38.867 L51,43.781 C51,44.799 46.835,46.667 40.029,46.667 L40.029,46.667 Z M40,53.518 C32.883,53.518 29,51.605 29,50.622 L29,46.498 C31.431,47.927 35.742,48.667 40.029,48.667 C44.292,48.667 48.578,47.929 51,46.503 L51,50.622 C51,51.605 47.117,53.518 40,53.518 L40,53.518 Z M40,24.086 C33.739,24.086 27,25.525 27,28.686 L27,50.622 C27,53.836 33.54,55.518 40,55.518 C46.46,55.518 53,53.836 53,50.622 L53,28.686 C53,25.525 46.261,24.086 40,24.086 L40,24.086 Z" id="Amazon-RDS-Amazon-RDS_Icon_64_Squid" fill="#FFFFFF" />
+    </ns0:g>
+</ns0:svg>
+<text x="1545" y="560" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#142B45">Amazon RDS</text>
+<text x="1545" y="598" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#127768">Private SQL database</text>
+<text x="1471" y="645" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#53667B">Read-only account + data policy</text>
+<text x="1471" y="677" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#53667B">No public database access</text>
+<polyline points="320,624 390,624" fill="none" stroke="#396CB0" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="390,624 378.2941876694152,629.654551943446 378.2941876694152,618.345448056554" fill="#396CB0"/>
+<polyline points="660,624 790,624" fill="none" stroke="#396CB0" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="790,624 778.2941876694152,629.654551943446 778.2941876694152,618.345448056554" fill="#396CB0"/>
+<polyline points="1260,609 1450,609" fill="none" stroke="#127768" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1450,609 1438.2941876694151,614.654551943446 1438.2941876694151,603.345448056554" fill="#127768"/>
+<text x="1280" y="573" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#127768">Validated SQL</text>
+<polyline points="1450,671 1260,671" fill="none" stroke="#127768" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="1260,671 1271.7058123305849,665.345448056554 1271.7058123305849,676.654551943446" fill="#127768"/>
+<text x="1300" y="689" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#127768">Scoped rows</text>
+<polyline points="1025,718 1025,769 570,769 570,718" fill="none" stroke="#396CB0" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="570,718 575.654551943446,729.7058123305848 564.345448056554,729.7058123305848" fill="#396CB0"/>
+<text x="695" y="737" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#396CB0">Response</text>
+<polyline points="480,718 480,858 193,858 193,718" fill="none" stroke="#396CB0" stroke-width="3" stroke-linejoin="round"/>
+<polygon points="193,718 198.654551943446,729.7058123305848 187.345448056554,729.7058123305848" fill="#396CB0"/>
+<text x="520" y="819" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#396CB0">Readable answer + table / chart</text>
+<text x="1120" y="835" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#53667B">Optional summary: send only permitted,</text>
+<text x="1120" y="864" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#53667B">minimised results to Bedrock.</text>
+<text x="381" y="910" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#53667B">IAM controls service access; application and database policies enforce row / column permissions.</text>
+<text x="65" y="985" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#142B45">Direct schema context · Independent SQL validation · Domain-specific connectors and policies</text>
+<text x="65" y="1029" dominant-baseline="text-before-edge" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#53667B">Conceptual deployment: metadata storage, identity provider and database engine are configured for the organisation.</text>
+</svg>
