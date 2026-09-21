@@ -13,3 +13,8 @@ API Gateway forwards authorised requests to Lambda. Lambda supplies approved sch
 The diagram describes the proposed enterprise deployment. Model-generated SQL is independently validated, and application/database policies enforce data access. IAM service permissions do not themselves filter records or fields. Kendra is not part of this architecture.
 
 [Official AWS icon attribution](ICON_SOURCES.md)
+
+## Additional SQL agent diagram
+
+[SQL agent architecture (PNG)](sql-agent.png) — supplied diagram showing ConverseSQLAgent Lambda, Amazon Bedrock, RDS, DynamoDB, Secrets Manager, and VPC endpoints.
+
