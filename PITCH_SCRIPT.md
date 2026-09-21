@@ -2,44 +2,45 @@
 
 ## Production direction
 
-- Target runtime: **2 minutes 58 seconds**. Scene timings match reference video v3. Use the reference timing and style; regenerate the changed narration for the production-replica wording and replace the future SQL-agent visual as directed below.
+- Target runtime: **2 minutes 58 seconds**. This technical revision gives architecture 45 seconds and security 25 seconds. The timings below supersede reference video v3; regenerate narration and synchronise the animations to this script.
 - Use professional British English AI narration with subtle instrumental music underneath.
 - Retain the navy background and orange highlights. Use short captions and an animation on every scene; do not display the full narration as slide text.
 - Present the idea as a natural-language interface for databases generally. Payments is the synthetic demonstration dataset.
 - Prototype order: **Business conversation → Product owner overview → Query history**. Mention DevOps only in query traceability. Do not frame the pitch around three users sharing a platform.
 - Explain user roles and company identity and access management (IAM) integration in the final security section.
+- Technical emphasis: the model generates SQL; explicit Lambda validation code and database permissions control execution. Describe these as the proposed design, rather than claiming unverified prototype controls.
 
-## 0:00–0:10 — Your data. Your decisions.
+## 0:00–0:08 — Your data. Your decisions.
 
 **Voiceover**
 
-Your database holds valuable information. When a business decision depends on it, how quickly can your team get an answer?
+Your database holds the answers. How quickly can your business get the information it needs?
 
 **Visual / animation**
 
 Animate database → question → business decision. Caption: **Your data. Your decisions.**
 
-## 0:10–0:24 — Every handoff takes time.
+## 0:08–0:19 — Every handoff takes time.
 
 **Voiceover**
 
-A business colleague asks. An engineer gets approved access, writes SQL, and sends the results. The information exists, but the business waits. Every handoff takes time.
+A business request becomes an engineering task: obtain access, write SQL, extract results. Every handoff takes time.
 
 **Visual / animation**
 
 Reveal request → approved access → SQL → results, one step at a time. Caption: **Every handoff takes time.**
 
-## 0:24–0:36 — Ask it. Know it.
+## 0:19–0:29 — Ask it. Know it.
 
 **Voiceover**
 
-GenAI Data Explorer turns everyday business questions into understandable answers. Ask in plain English, retrieve the relevant information, and explore the result.
+GenAI Data Explorer turns business questions into database queries and understandable answers. Ask in plain English. Explore the result.
 
 **Visual / animation**
 
 Animate three actions: Ask → Retrieve → Understand. Caption: **Ask it. Know it.**
 
-## 0:36–1:00 — A business question. A clear answer.
+## 0:29–0:53 — A business question. A clear answer.
 
 **Voiceover**
 
@@ -49,7 +50,7 @@ A business colleague needs an update on supplier POY. They ask: How many booking
 
 Show the supplied Business conversation screenshot. Highlight the POY question, then the answer **28**. Follow with a simple result card and the visible follow-up suggestions. Preserve the screen's reporting-period label.
 
-## 1:00–1:18 — From overview to action.
+## 0:53–1:10 — From overview to action.
 
 **Voiceover**
 
@@ -59,7 +60,7 @@ Product owners get a near-real-time overview of the business through a connectio
 
 Show the actual Business overview, then highlight processing totals, rejections, and supplier SLA performance. Caption: **From overview to action.** Caption the data source **Production replica · Near-real-time overview**. Preserve the displayed data timestamp.
 
-## 1:18–1:32 — Trace the question. Understand the result.
+## 1:10–1:24 — Trace the question. Understand the result.
 
 **Voiceover**
 
@@ -69,35 +70,43 @@ For traceability, authorised DevOps users can review recorded questions, execute
 
 Show the supplied Query history screenshot, then enlarge the entries so the question, SQL, timestamp, status, and returned row count are readable. Caption: **Trace the question. Understand the result.**
 
-## 1:32–2:06 — A clear path from question to answer.
+## 1:24–2:09 — A clear path from question to answer.
 
 **Voiceover**
 
-No model training on organisational data is required. API Gateway sends the question to Lambda, which gives Bedrock approved schema context to generate SQL. The same Lambda validates syntax, permitted operations, and user access, then queries the private production replica using read-only access. It sends the minimum authorised results to Bedrock for a plain-English summary and returns the answer. One Lambda, two model calls, with queries running against the replica rather than the production primary.
+In the proposed architecture, API Gateway forwards the question to Lambda. Lambda supplies Bedrock with approved table definitions, relationships, and business rules. No model training on organisational data is required. Bedrock generates SQL. Validation code in the same Lambda checks syntax, allowed tables and columns, and read-only operations. It applies query limits and timeouts before execution against the production replica, using restricted database permissions. Lambda sends the minimum authorised result back to Bedrock for a plain-English summary. One Lambda coordinates two model calls; validation and access controls operate independently of the model.
 
 **Visual / animation**
 
-Use AWS architecture icons. Animate API Gateway → Lambda → Bedrock → back to the same Lambda for validation → private RDS production replica → same Lambda → Bedrock summarises minimum authorised results → same Lambda → API Gateway → application. Highlight validation inside the Lambda box; do not introduce another backend service or interface. Show approved schema context and the private-network boundary. Label the query target **RDS production replica**. Label the architecture **Proposed**. Show short captions **No model training required** and **Read-only queries on the production replica**. Use the existing Lambda and Bedrock boxes for both model calls; do not add another Lambda. Leave pauses to follow each step.
+Keep the label **Proposed AWS architecture** visible. Use the existing AWS icons and the same Lambda box throughout. Animate a single example from question to result:
 
-## 2:06–2:24 — Build on the foundation.
+1. **Question + approved context:** API Gateway → Lambda. Show the POY question with compact labels for tables, relationships, and business definitions; “processed” means successfully settled in this demo. Context is supplied at inference time, without model training.
+2. **Model call 1 — SQL generation:** Lambda → Bedrock → the same Lambda. Reveal a short SQL preview or labelled query plan based on the approved schema; avoid a wall of code.
+3. **Lambda validation:** Highlight the Lambda box. Sequential labels: **Parse syntax → Allowlisted tables / columns → Read-only operations → Limits / timeout**. These checks are validation code, not a promise from the model.
+4. **Restricted execution:** Lambda → **Private RDS production replica**. Show **Database permissions enforced** and the compact result **processed_count: 28**. The result corresponds to the captured POY example.
+5. **Model call 2 — summarisation:** Replica → same Lambda → Bedrock with **Minimum authorised result**, then Bedrock → Lambda → API Gateway → application. End on **One Lambda · Two model calls**.
+
+Do not add another Lambda or a separate validation backend. Preserve the private-network boundary. Keep labels brief and reveal them in sync with narration. Refer to the proposed controls without implying syntax checking alone establishes answer correctness.
+
+## 2:09–2:24 — Build on the foundation.
 
 **Voiceover**
 
-Future extensions include an autonomous SQL agent for complex database schemas, using schema retrieval and controlled query correction. AI-powered business predictions, such as forecasting demand or potential service-level breaches, would help teams plan ahead and take earlier action.
+The architecture can extend to an autonomous SQL agent for complex schemas, with metadata retrieval and controlled query correction. Future AI predictions could help teams forecast demand and anticipate service-level breaches.
 
 **Visual / animation**
 
-When the voiceover says “Future extensions include an autonomous SQL agent for complex database schemas,” show the supplied **SQL agent architecture diagram** (`assets/sql-agent.png` in the upload package; `architecture/sql-agent.png` in the GitHub repository). Replace the generic schema-retrieval / SQL-generation animation in this section with this diagram. Enlarge it for readability and highlight ConverseSQLAgent Lambda and its connections to Bedrock and RDS as the narration describes the extension. Keep the label **Future: autonomous SQL agent** visible. When the narration moves to business predictions, transition to the forecast graphic labelled **Future: business predictions**. The preceding main architecture section continues to use the existing architecture diagram.
+When the voiceover says “The architecture can extend to an autonomous SQL agent for complex schemas,” show the supplied **SQL agent architecture diagram** (`assets/sql-agent.png` in the upload package; `architecture/sql-agent.png` in the GitHub repository). Replace the generic schema-retrieval / SQL-generation animation in this section with this diagram. Enlarge it for readability and highlight ConverseSQLAgent Lambda and its connections to Bedrock and RDS as the narration describes the extension. Keep the label **Future: autonomous SQL agent** visible. When the narration moves to business predictions, transition to the forecast graphic labelled **Future: business predictions**. The preceding main architecture section continues to use the existing architecture diagram.
 
 ## 2:24–2:49 — Your role determines your data access.
 
 **Voiceover**
 
-In the proposed deployment, every GenAI Data Explorer user's data access is determined by their role, integrated with company identity and access management. Application and database policies enforce access to permitted records and fields. The production replica stays within the private network, accessed through the authorised application. Lambda validates each query before read-only execution.
+Every GenAI Data Explorer user's data access is determined by their verified role through company identity and access management. Application policies and database permissions enforce access to permitted records and fields. The production replica remains private. Only the minimum authorised results reach Bedrock for summarisation, while query history supports traceability.
 
 **Visual / animation**
 
-Animate user sign-in → company IAM → verified role → policy enforcement → permitted records and fields. Highlight private production-replica access and validated read-only queries. Caption: **Your role determines your data access.**
+Animate user sign-in → company IAM → verified role → application/data policies → permitted records and fields. Highlight the private production replica and restricted database permissions. Show the minimum-result path to Bedrock and query history briefly. Caption: **Your role determines your data access.**
 
 ## 2:49–2:58 — Ask it. Know it.
 
@@ -127,8 +136,8 @@ Reveal **Fewer handoffs. Faster answers.** End on **GenAI Data Explorer — Ask 
 
 Use the accompanying upload package. Paths below are relative to its root; they are not Windows paths.
 
-- Reference video: `assets/reference-v3.mp4`. Match its design, voice, music, and pacing. Replace the generic future SQL-agent animation with the supplied SQL-agent diagram.
-- Previous narration reference: `assets/narration.mp3`. Regenerate the Product owner, architecture, and security narration from this script to include the production replica; replace those audio segments rather than layering speech.
+- Reference video: `assets/reference-v3.mp4`. Match its design, voice, and music; use the new scene timings in this script. Replace the generic future SQL-agent animation with the supplied SQL-agent diagram.
+- Previous narration reference: `assets/narration.mp3`. Regenerate narration from this technical revision and align it to the new timeline. Use the old track only as a voice/style reference; never layer old and new speech.
 - Original music: `assets/music.mp3`. Keep quiet beneath narration; the reference mix uses approximately 28% of this source amplitude.
 - Business conversation: `assets/business-conversation.png`.
 - Product owner overview: `assets/business-overview.png`.
@@ -138,4 +147,4 @@ Use the accompanying upload package. Paths below are relative to its root; they 
 - Target timeline and current narration text: `timeline.json`. Recheck timing after synthesising the revised segments.
 - Production instructions: `LOVABLE_VIDEO_PROMPT.md`.
 
-Read production notes as editing guidance. Speak only the Voiceover sections, and reuse only unchanged portions of the provided narration track. Keep technical notes and file paths out of the video.
+Read production notes as editing guidance. Speak only the Voiceover sections, using the updated timing plan. Keep technical notes and file paths out of the video.
