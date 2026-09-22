@@ -1,10 +1,10 @@
 # Lovable pitch package — version 5
 
-Upload `LOVABLE_PITCH_SCRIPT.md` and diagrams **01, 03 and 04** from `assets/` to Lovable. Diagram 01 also has an animated GIF. Add your silent 40-second prototype clip when ready. SVG versions are included for editing and animation. The total target is 178 seconds, including the impact section for customer experience and productivity.
+Upload `LOVABLE_PITCH_SCRIPT.md` and diagrams **01, 03 and 04** from `assets/` to Lovable. Diagram 01 also has an animated GIF. Use the existing **66-second prototype video** from 00:57 to 02:03. The total target is 178 seconds, following the workshop's seven-section order. Older 40-second timing instructions are superseded.
 
 Suggested instruction to Lovable:
 
-> Create the complete pitch video following the attached LOVABLE_PITCH_SCRIPT.md. First capture the existing prototype's business conversation and query-history flow as a 40-second demo for 00:29–01:09. Use the actual question and answer, followed by authorised DevOps query history. Do not rebuild the prototype or invent results. Use the attached architecture diagrams as separate scene assets and animate their highlights. Follow the script's narration, order and timing, adjusting the spoken result only to match the actual captured answer. Preserve the navy/orange style, use one professional British English narration voice and subtle music, and keep the final export below three minutes. Do not add product owner or business-overview scenes, vendor branding or unverified functionality. If recording the prototype is unavailable, prepare the other scenes and ask me to supply a silent 40-second screen recording.
+> Create the remaining pitch around the existing 66-second prototype video, following LOVABLE_PITCH_SCRIPT.md. Preserve the demo at normal speed from 00:57 to 02:03; do not rebuild it or invent results. Follow the seven sections: hook, problem and value, solution and innovation, demonstration, impact, credibility/risks/safeguards, and close. Use the supplied diagrams with animated highlights. Keep the total at 2:58, including transitions. Preserve navy/orange styling, professional English narration and subtle music. Inspect the demo's audio before mixing so narration and music do not overlap. If the demo file is not yet available, prepare the surrounding 112 seconds and reserve its exact 66-second slot. Use diagrams 01, 03 and 04; do not add a second safeguards slide or product owner section.
 
 ## Files
 
