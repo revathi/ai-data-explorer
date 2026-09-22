@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#0D1230"/>
+<text x="60" y="70" font-family="Segoe UI,Arial,sans-serif" font-size="40" font-weight="700" fill="#F5F7FF">GenAI Data Explorer | System Architecture</text>
+<text x="60" y="110" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#C2CBE2">Proposed design</text>
+<rect x="70" y="160" width="330" height="150" rx="16" fill="#171F43" stroke="#FF7900" stroke-width="2"/>
+<ellipse cx="118.0" cy="193.0" rx="8.0" ry="8.0" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="100,224 103,210 118,206 133,210 136,224" fill="none" stroke="#FF7900" stroke-width="3"/>
+<text x="163" y="213" font-family="Segoe UI,Arial,sans-serif" font-size="32" font-weight="700" fill="#F5F7FF">User</text>
+<text x="100" y="273" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="400" fill="#F5F7FF">Business / DevOps</text>
+<text x="422" y="212" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#FF7900">Question</text>
+<polyline points="400,240 600,240" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="589.4690092573155,245.75310646325045 600,240 589.4690092573155,234.24689353674955" fill="none" stroke="#FF7900" stroke-width="3"/>
+<rect x="600" y="160" width="1260" height="120" rx="16" fill="#171F43" stroke="#38456D" stroke-width="2"/>
+<polyline points="648,180 666,188 662,207 648,220 634,207 630,188 648,180" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="639,199 646,206 658,192" fill="none" stroke="#FF7900" stroke-width="3"/>
+<text x="690" y="203" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" fill="#F5F7FF">API Layer</text>
+<text x="630" y="256" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="400" fill="#F5F7FF">Authentication &amp; role-based access  •  Question validation</text>
+<polyline points="1230,280 1230,325" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="1224.2468935367497,314.4690092573155 1230,325 1235.7531064632503,314.4690092573155" fill="none" stroke="#FF7900" stroke-width="3"/>
+<rect x="600" y="325" width="1260" height="300" rx="16" fill="#171F43" stroke="#38456D" stroke-width="2"/>
+<rect x="633" y="347" width="32" height="32" rx="5" fill="#171F43" stroke="#FF7900" stroke-width="2"/>
+<polyline points="640,341 640,347" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="640,379 640,385" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="627,354 633,354" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="665,354 671,354" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="656,341 656,347" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="656,379 656,385" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="627,370 633,370" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="665,370 671,370" fill="none" stroke="#FF7900" stroke-width="3"/>
+<text x="690" y="368" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" fill="#F5F7FF">Query Orchestration Layer</text>
+<rect x="630" y="400" width="550" height="62" rx="16" fill="#0D1230" stroke="#38456D" stroke-width="2"/>
+<ellipse cx="662.0" cy="417.0" rx="18.0" ry="6.0" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="644,417 644,445" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="680,417 680,445" fill="none" stroke="#FF7900" stroke-width="3"/>
+<ellipse cx="662.0" cy="445.0" rx="18.0" ry="6.0" fill="none" stroke="#FF7900" stroke-width="3"/>
+<text x="700" y="436" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#F5F7FF">Approved schema &amp; business context</text>
+<rect x="1260" y="400" width="570" height="62" rx="16" fill="#0D1230" stroke="#38456D" stroke-width="2"/>
+<rect x="1277" y="414" width="32" height="32" rx="5" fill="#171F43" stroke="#FF7900" stroke-width="2"/>
+<polyline points="1284,408 1284,414" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="1284,446 1284,452" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="1271,421 1277,421" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="1309,421 1315,421" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="1300,408 1300,414" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="1300,446 1300,452" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="1271,437 1277,437" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="1309,437 1315,437" fill="none" stroke="#FF7900" stroke-width="3"/>
+<text x="1330" y="436" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#F5F7FF">LLM: Natural language → SQL</text>
+<polyline points="1180,431 1260,431" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="1249.4690092573155,436.75310646325045 1260,431 1249.4690092573155,425.24689353674955" fill="none" stroke="#FF7900" stroke-width="3"/>
+<text x="1280" y="495" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#C2CBE2">Result-bounded read-only query generation</text>
+<polyline points="1550,499 1550,530" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="1544.2468935367497,519.4690092573155 1550,530 1555.7531064632503,519.4690092573155" fill="none" stroke="#FF7900" stroke-width="3"/>
+<rect x="1260" y="530" width="570" height="62" rx="16" fill="#0D1230" stroke="#38456D" stroke-width="2"/>
+<polyline points="1292,541 1310,549 1306,568 1292,581 1278,568 1274,549 1292,541" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="1283,560 1290,567 1302,553" fill="none" stroke="#FF7900" stroke-width="3"/>
+<text x="1330" y="566" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#F5F7FF">SQL syntax &amp; policy validation</text>
+<rect x="630" y="530" width="550" height="82" rx="16" fill="#0D1230" stroke="#38456D" stroke-width="2"/>
+<ellipse cx="662.0" cy="554.0" rx="8.0" ry="8.0" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="644,585 647,571 662,567 677,571 680,585" fill="none" stroke="#FF7900" stroke-width="3"/>
+<text x="700" y="561" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#F5F7FF">Human review &amp; approval</text>
+<text x="700" y="593" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="400" fill="#C2CBE2">(Only when configured review thresholds are exceeded)</text>
+<polyline points="1260,561 1180,561" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="1190.5309907426845,555.2468935367496 1180,561 1190.5309907426845,566.7531064632504" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="900,625 900,685" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="894.2468935367496,674.4690092573155 900,685 905.7531064632504,674.4690092573155" fill="none" stroke="#FF7900" stroke-width="3"/>
+<rect x="600" y="685" width="1260" height="140" rx="16" fill="#171F43" stroke="#38456D" stroke-width="2"/>
+<ellipse cx="648.0" cy="712.0" rx="18.0" ry="6.0" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="630,712 630,740" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="666,712 666,740" fill="none" stroke="#FF7900" stroke-width="3"/>
+<ellipse cx="648.0" cy="740.0" rx="18.0" ry="6.0" fill="none" stroke="#FF7900" stroke-width="3"/>
+<text x="690" y="730" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" fill="#F5F7FF">Data &amp; Audit Layer</text>
+<text x="630" y="791" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="400" fill="#F5F7FF">Read-only query execution  •  Audit log</text>
+<polyline points="1230,825 1230,870" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="1224.2468935367497,859.4690092573155 1230,870 1235.7531064632503,859.4690092573155" fill="none" stroke="#FF7900" stroke-width="3"/>
+<rect x="600" y="870" width="1260" height="125" rx="16" fill="#171F43" stroke="#38456D" stroke-width="2"/>
+<rect x="630" y="891" width="38" height="30" rx="6" fill="#171F43" stroke="#FF7900" stroke-width="2"/>
+<polyline points="640,921 640,931 652,921" fill="none" stroke="#FF7900" stroke-width="3"/>
+<text x="690" y="915" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" fill="#F5F7FF">Response Layer</text>
+<text x="630" y="971" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="400" fill="#F5F7FF">Authorised results</text>
+<polyline points="600,933 235,933 235,335" fill="none" stroke="#71C9FF" stroke-width="3"/>
+<polyline points="235,335 235,310" fill="none" stroke="#71C9FF" stroke-width="3"/>
+<polyline points="240.75310646325045,320.5309907426845 235,310 229.24689353674955,320.5309907426845" fill="none" stroke="#71C9FF" stroke-width="3"/>
+<text x="280" y="808" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="700" fill="#71C9FF">Authorised results</text>
+<text x="280" y="847" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#C2CBE2">returned to the user</text>
+<text x="160" y="1058" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700" fill="#F5F7FF">AI-powered intelligence accelerates operations within controlled boundaries.</text>
+</svg>

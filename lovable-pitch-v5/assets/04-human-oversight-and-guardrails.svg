@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#0D1230"/>
+<text x="60" y="70" font-family="Segoe UI,Arial,sans-serif" font-size="40" font-weight="700" fill="#F5F7FF">Human Oversight &amp; Guardrails</text>
+<text x="60" y="110" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#C2CBE2">Proposed policy  •  Every query is validated; only exceptional queries require human approval</text>
+<rect x="60" y="180" width="560" height="710" rx="16" fill="#171F43" stroke="#61DEAA" stroke-width="2"/>
+<ellipse cx="335.0" cy="228.0" rx="20.0" ry="20.0" fill="none" stroke="#61DEAA" stroke-width="3"/>
+<polyline points="324,229 333,237 346,220" fill="none" stroke="#61DEAA" stroke-width="3"/>
+<text x="86" y="298" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700" fill="#61DEAA">Automatic path</text>
+<polyline points="88,327 590,327" fill="none" stroke="#61DEAA" stroke-width="3"/>
+<ellipse cx="105.0" cy="388.0" rx="20.0" ry="20.0" fill="none" stroke="#61DEAA" stroke-width="3"/>
+<polyline points="94,389 103,397 116,380" fill="none" stroke="#61DEAA" stroke-width="3"/>
+<text x="141" y="389" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#F5F7FF">Generate read-only SQL</text>
+<text x="88" y="428" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#C2CBE2">Use approved schema and business context</text>
+<ellipse cx="105.0" cy="507.0" rx="20.0" ry="20.0" fill="none" stroke="#61DEAA" stroke-width="3"/>
+<polyline points="94,508 103,516 116,499" fill="none" stroke="#61DEAA" stroke-width="3"/>
+<text x="141" y="508" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#F5F7FF">Validate every query</text>
+<text x="88" y="547" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#C2CBE2">Check syntax, access and permitted operations</text>
+<ellipse cx="105.0" cy="626.0" rx="20.0" ry="20.0" fill="none" stroke="#61DEAA" stroke-width="3"/>
+<polyline points="94,627 103,635 116,618" fill="none" stroke="#61DEAA" stroke-width="3"/>
+<text x="141" y="627" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#F5F7FF">Execute within policy</text>
+<text x="88" y="666" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#C2CBE2">Enforce row limits, timeouts and permissions</text>
+<ellipse cx="105.0" cy="745.0" rx="20.0" ry="20.0" fill="none" stroke="#61DEAA" stroke-width="3"/>
+<polyline points="94,746 103,754 116,737" fill="none" stroke="#61DEAA" stroke-width="3"/>
+<text x="141" y="746" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#F5F7FF">Return authorised results</text>
+<text x="88" y="785" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#C2CBE2">Record the query and execution outcome</text>
+<rect x="680" y="180" width="560" height="710" rx="16" fill="#171F43" stroke="#FF8C9A" stroke-width="2"/>
+<ellipse cx="955.0" cy="228.0" rx="20.0" ry="20.0" fill="none" stroke="#FF8C9A" stroke-width="3"/>
+<polyline points="947,220 963,236" fill="none" stroke="#FF8C9A" stroke-width="3"/>
+<polyline points="947,236 963,220" fill="none" stroke="#FF8C9A" stroke-width="3"/>
+<text x="706" y="298" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700" fill="#FF8C9A">Blocked by guardrails</text>
+<polyline points="708,327 1210,327" fill="none" stroke="#FF8C9A" stroke-width="3"/>
+<polyline points="723,368 741,376 737,395 723,408 709,395 705,376 723,368" fill="none" stroke="#FF8C9A" stroke-width="3"/>
+<polyline points="714,387 721,394 733,380" fill="none" stroke="#FF8C9A" stroke-width="3"/>
+<text x="761" y="389" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#F5F7FF">No database changes</text>
+<text x="708" y="428" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#C2CBE2">Block INSERT, UPDATE, DELETE and DROP</text>
+<polyline points="723,487 741,495 737,514 723,527 709,514 705,495 723,487" fill="none" stroke="#FF8C9A" stroke-width="3"/>
+<polyline points="714,506 721,513 733,499" fill="none" stroke="#FF8C9A" stroke-width="3"/>
+<text x="761" y="508" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#F5F7FF">No unauthorised access</text>
+<text x="708" y="547" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#C2CBE2">Enforce permitted tables, columns and rows</text>
+<polyline points="723,606 741,614 737,633 723,646 709,633 705,614 723,606" fill="none" stroke="#FF8C9A" stroke-width="3"/>
+<polyline points="714,625 721,632 733,618" fill="none" stroke="#FF8C9A" stroke-width="3"/>
+<text x="761" y="627" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#F5F7FF">No unchecked execution</text>
+<text x="708" y="666" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#C2CBE2">Reject invalid SQL and failed policy checks</text>
+<polyline points="723,725 741,733 737,752 723,765 709,752 705,733 723,725" fill="none" stroke="#FF8C9A" stroke-width="3"/>
+<polyline points="714,744 721,751 733,737" fill="none" stroke="#FF8C9A" stroke-width="3"/>
+<text x="761" y="746" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#F5F7FF">No hard-limit bypass</text>
+<text x="708" y="785" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#C2CBE2">Human approval cannot override restrictions</text>
+<rect x="1300" y="180" width="560" height="710" rx="16" fill="#171F43" stroke="#71C9FF" stroke-width="2"/>
+<ellipse cx="1573.0" cy="216.0" rx="8.0" ry="8.0" fill="none" stroke="#71C9FF" stroke-width="3"/>
+<polyline points="1555,247 1558,233 1573,229 1588,233 1591,247" fill="none" stroke="#71C9FF" stroke-width="3"/>
+<text x="1326" y="280" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="700" fill="#71C9FF">Human review for</text>
+<text x="1326" y="311" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="700" fill="#71C9FF">exceptional queries</text>
+<polyline points="1328,327 1830,327" fill="none" stroke="#71C9FF" stroke-width="3"/>
+<ellipse cx="1343.0" cy="376.0" rx="8.0" ry="8.0" fill="none" stroke="#71C9FF" stroke-width="3"/>
+<polyline points="1325,407 1328,393 1343,389 1358,393 1361,407" fill="none" stroke="#71C9FF" stroke-width="3"/>
+<text x="1381" y="389" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#F5F7FF">1. Pause the query</text>
+<text x="1328" y="428" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#C2CBE2">Estimated cost or complexity exceeds</text>
+<text x="1328" y="455" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#C2CBE2">the configured review threshold</text>
+<ellipse cx="1343.0" cy="495.0" rx="8.0" ry="8.0" fill="none" stroke="#71C9FF" stroke-width="3"/>
+<polyline points="1325,526 1328,512 1343,508 1358,512 1361,526" fill="none" stroke="#71C9FF" stroke-width="3"/>
+<text x="1381" y="508" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#F5F7FF">2. Show the reviewer the details</text>
+<text x="1328" y="547" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#C2CBE2">Business question, generated SQL</text>
+<text x="1328" y="574" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#C2CBE2">and the reason for review</text>
+<ellipse cx="1343.0" cy="614.0" rx="8.0" ry="8.0" fill="none" stroke="#71C9FF" stroke-width="3"/>
+<polyline points="1325,645 1328,631 1343,627 1358,631 1361,645" fill="none" stroke="#71C9FF" stroke-width="3"/>
+<text x="1381" y="627" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#F5F7FF">3. Approve, revise or reject</text>
+<text x="1328" y="666" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#C2CBE2">Revised queries must pass validation again</text>
+<ellipse cx="1343.0" cy="733.0" rx="8.0" ry="8.0" fill="none" stroke="#71C9FF" stroke-width="3"/>
+<polyline points="1325,764 1328,750 1343,746 1358,750 1361,764" fill="none" stroke="#71C9FF" stroke-width="3"/>
+<text x="1381" y="746" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="700" fill="#F5F7FF">4. Execute after approval</text>
+<text x="1328" y="785" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#C2CBE2">Recheck permissions and record the decision</text>
+<rect x="60" y="937" width="1800" height="84" rx="16" fill="#171F43" stroke="#FF7900" stroke-width="2"/>
+<text x="105" y="984" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#F5F7FF">Routine queries run automatically. Exceptional queries require approval. Unsafe queries are blocked.</text>
+</svg>

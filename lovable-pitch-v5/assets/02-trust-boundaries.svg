@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#0D1230"/>
+<text x="60" y="70" font-family="Segoe UI,Arial,sans-serif" font-size="40" font-weight="700" fill="#F5F7FF">Trust Boundaries | AI Autonomy, Controlled Execution</text>
+<text x="60" y="110" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#C2CBE2">Proposed controls  •  The AI generates SQL; application controls determine what may execute</text>
+<rect x="60" y="190" width="560" height="680" rx="16" fill="#171F43" stroke="#61DEAA" stroke-width="2"/>
+<ellipse cx="108.0" cy="243.0" rx="20.0" ry="20.0" fill="none" stroke="#61DEAA" stroke-width="3"/>
+<polyline points="97,244 106,252 119,235" fill="none" stroke="#61DEAA" stroke-width="3"/>
+<text x="148" y="247" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" fill="#61DEAA">AI capabilities</text>
+<polyline points="88,285 590,285" fill="none" stroke="#61DEAA" stroke-width="3"/>
+<text x="90" y="352" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F5F7FF">Generate SQL</text>
+<text x="90" y="393" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#C2CBE2">Use approved schema and definitions</text>
+<text x="90" y="476" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F5F7FF">Combine permitted data</text>
+<text x="90" y="517" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#C2CBE2">Filter, join, sort and aggregate</text>
+<text x="90" y="600" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F5F7FF">Explain results</text>
+<text x="90" y="641" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#C2CBE2">Summarise authorised query results</text>
+<text x="90" y="724" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F5F7FF">Continue the conversation</text>
+<text x="90" y="765" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#C2CBE2">Clarify and refine business questions</text>
+<rect x="680" y="190" width="560" height="680" rx="16" fill="#171F43" stroke="#FF8C9A" stroke-width="2"/>
+<ellipse cx="728.0" cy="243.0" rx="20.0" ry="20.0" fill="none" stroke="#FF8C9A" stroke-width="3"/>
+<polyline points="720,235 736,251" fill="none" stroke="#FF8C9A" stroke-width="3"/>
+<polyline points="720,251 736,235" fill="none" stroke="#FF8C9A" stroke-width="3"/>
+<text x="768" y="247" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" fill="#FF8C9A">Execution restrictions</text>
+<polyline points="708,285 1210,285" fill="none" stroke="#FF8C9A" stroke-width="3"/>
+<text x="710" y="352" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F5F7FF">No database changes</text>
+<text x="710" y="393" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#C2CBE2">Restricted read-only database account</text>
+<text x="710" y="476" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F5F7FF">No unauthorised data access</text>
+<text x="710" y="517" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#C2CBE2">Approved tables, columns and rows</text>
+<text x="710" y="600" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F5F7FF">No unchecked execution</text>
+<text x="710" y="641" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#C2CBE2">Validation and required approval</text>
+<text x="710" y="724" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F5F7FF">No unbounded queries</text>
+<text x="710" y="765" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#C2CBE2">Configured result limits and timeouts</text>
+<rect x="1300" y="190" width="560" height="680" rx="16" fill="#171F43" stroke="#71C9FF" stroke-width="2"/>
+<polyline points="1346,223 1364,231 1360,250 1346,263 1332,250 1328,231 1346,223" fill="none" stroke="#71C9FF" stroke-width="3"/>
+<polyline points="1337,242 1344,249 1356,235" fill="none" stroke="#71C9FF" stroke-width="3"/>
+<text x="1388" y="247" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" fill="#71C9FF">Enforced controls</text>
+<polyline points="1328,285 1830,285" fill="none" stroke="#71C9FF" stroke-width="3"/>
+<text x="1330" y="352" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F5F7FF">Verified identity and role</text>
+<text x="1330" y="393" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#C2CBE2">Company IAM + data access policies</text>
+<text x="1330" y="476" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F5F7FF">SQL syntax and policy checks</text>
+<text x="1330" y="517" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#C2CBE2">Validation enforced in application code</text>
+<text x="1330" y="600" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F5F7FF">Human review and approval</text>
+<text x="1330" y="641" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#C2CBE2">Exact SQL approved; access rechecked</text>
+<text x="1330" y="724" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" fill="#F5F7FF">Traceability</text>
+<text x="1330" y="765" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#C2CBE2">Recorded decisions and executions</text>
+<rect x="60" y="925" width="1800" height="95" rx="16" fill="#171F43" stroke="#FF7900" stroke-width="2"/>
+<text x="90" y="975" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" fill="#F5F7FF">Model instructions guide generation. Application and database controls enforce the boundaries.</text>
+</svg>

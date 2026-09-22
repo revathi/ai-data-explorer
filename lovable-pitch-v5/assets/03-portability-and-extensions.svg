@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#0D1230"/>
+<text x="60" y="70" font-family="Segoe UI,Arial,sans-serif" font-size="40" font-weight="700" fill="#F5F7FF">Portable by Design | Extensible by Choice</text>
+<text x="60" y="110" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#C2CBE2">Proposed architecture  •  Stable workflow, replaceable integrations</text>
+<rect x="60" y="175" width="1800" height="150" rx="16" fill="#171F43" stroke="#FF7900" stroke-width="2"/>
+<rect x="93" y="204" width="32" height="32" rx="5" fill="#171F43" stroke="#FF7900" stroke-width="2"/>
+<polyline points="100,198 100,204" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="100,236 100,242" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="87,211 93,211" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="125,211 131,211" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="116,198 116,204" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="116,236 116,242" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="87,227 93,227" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="125,227 131,227" fill="none" stroke="#FF7900" stroke-width="3"/>
+<text x="155" y="229" font-family="Segoe UI,Arial,sans-serif" font-size="32" font-weight="700" fill="#F5F7FF">Portable Application Core</text>
+<text x="90" y="293" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="400" fill="#F5F7FF">API  •  Context retrieval  •  SQL generation  •  Validation  •  Human approval  •  Execution  •  Answers</text>
+<polyline points="340,325 340,390" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="334.24689353674955,379.4690092573155 340,390 345.75310646325045,379.4690092573155" fill="none" stroke="#FF7900" stroke-width="3"/>
+<rect x="60" y="390" width="560" height="205" rx="16" fill="#171F43" stroke="#38456D" stroke-width="2"/>
+<rect x="90" y="420" width="32" height="32" rx="5" fill="#171F43" stroke="#FF7900" stroke-width="2"/>
+<polyline points="97,414 97,420" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="97,452 97,458" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="84,427 90,427" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="122,427 128,427" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="113,414 113,420" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="113,452 113,458" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="84,443 90,443" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="122,443 128,443" fill="none" stroke="#FF7900" stroke-width="3"/>
+<text x="145" y="440" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" fill="#F5F7FF">Model Adapter</text>
+<text x="88" y="500" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#C2CBE2">Approved model endpoint</text>
+<text x="88" y="540" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#C2CBE2">Evaluate when changing models</text>
+<polyline points="960,325 960,390" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="954.2468935367496,379.4690092573155 960,390 965.7531064632504,379.4690092573155" fill="none" stroke="#FF7900" stroke-width="3"/>
+<rect x="680" y="390" width="560" height="205" rx="16" fill="#171F43" stroke="#38456D" stroke-width="2"/>
+<ellipse cx="725.0" cy="423.0" rx="18.0" ry="6.0" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="707,423 707,451" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="743,423 743,451" fill="none" stroke="#FF7900" stroke-width="3"/>
+<ellipse cx="725.0" cy="451.0" rx="18.0" ry="6.0" fill="none" stroke="#FF7900" stroke-width="3"/>
+<text x="765" y="440" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" fill="#F5F7FF">Database Adapter</text>
+<text x="708" y="500" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#C2CBE2">Supported production replica</text>
+<text x="708" y="540" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#C2CBE2">Test dialect and access policies</text>
+<polyline points="1580,325 1580,390" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="1574.2468935367497,379.4690092573155 1580,390 1585.7531064632503,379.4690092573155" fill="none" stroke="#FF7900" stroke-width="3"/>
+<rect x="1300" y="390" width="560" height="205" rx="16" fill="#171F43" stroke="#38456D" stroke-width="2"/>
+<polyline points="1345,417 1363,425 1359,444 1345,457 1331,444 1327,425 1345,417" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="1336,436 1343,443 1355,429" fill="none" stroke="#FF7900" stroke-width="3"/>
+<text x="1385" y="440" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" fill="#F5F7FF">Platform Integrations</text>
+<text x="1328" y="500" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#C2CBE2">Identity, secrets and audit state</text>
+<text x="1328" y="540" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#C2CBE2">Configure for the target platform</text>
+<text x="60" y="675" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" fill="#FF7900">Future extensions</text>
+<rect x="60" y="707" width="560" height="210" rx="16" fill="#171F43" stroke="#38456D" stroke-width="2"/>
+<ellipse cx="105.0" cy="741.0" rx="18.0" ry="6.0" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="87,741 87,769" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="123,741 123,769" fill="none" stroke="#FF7900" stroke-width="3"/>
+<ellipse cx="105.0" cy="769.0" rx="18.0" ry="6.0" fill="none" stroke="#FF7900" stroke-width="3"/>
+<text x="145" y="757" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700" fill="#F5F7FF">Schema RAG</text>
+<text x="88" y="823" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#C2CBE2">Retrieve relevant authorised metadata</text>
+<text x="88" y="863" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#C2CBE2">Keep model context focused</text>
+<rect x="680" y="707" width="560" height="210" rx="16" fill="#171F43" stroke="#38456D" stroke-width="2"/>
+<rect x="710" y="738" width="32" height="32" rx="5" fill="#171F43" stroke="#FF7900" stroke-width="2"/>
+<polyline points="717,732 717,738" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="717,770 717,776" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="704,745 710,745" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="742,745 748,745" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="733,732 733,738" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="733,770 733,776" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="704,761 710,761" fill="none" stroke="#FF7900" stroke-width="3"/>
+<polyline points="742,761 748,761" fill="none" stroke="#FF7900" stroke-width="3"/>
+<text x="765" y="757" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700" fill="#F5F7FF">Controlled SQL Agent</text>
+<text x="708" y="823" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#C2CBE2">Bounded query refinement</text>
+<text x="708" y="863" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#C2CBE2">Repeat validation and approval</text>
+<rect x="1300" y="707" width="560" height="210" rx="16" fill="#171F43" stroke="#38456D" stroke-width="2"/>
+<rect x="1327" y="735" width="38" height="30" rx="6" fill="#171F43" stroke="#FF7900" stroke-width="2"/>
+<polyline points="1337,765 1337,775 1349,765" fill="none" stroke="#FF7900" stroke-width="3"/>
+<text x="1385" y="757" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700" fill="#F5F7FF">Business Predictions</text>
+<text x="1328" y="823" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#C2CBE2">Forecast demand and service risks</text>
+<text x="1328" y="863" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#C2CBE2">Evaluate with suitable historical data</text>
+<text x="60" y="1005" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="400" fill="#C2CBE2">Portability needs working adapters and testing. Future extensions retain the same access and execution controls.</text>
+</svg>
